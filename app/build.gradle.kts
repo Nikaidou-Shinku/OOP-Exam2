@@ -26,10 +26,12 @@ dependencies {
 
 application {
   // Define the main class for the application.
-  mainClass.set("exam2.App")
+  // mainClass.set("exam2.App")
 }
 
 tasks.named<Test>("test") {
   // Use JUnit Platform for unit tests.
   useJUnitPlatform()
+
+  testLogging.showStandardStreams = true
 }

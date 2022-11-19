@@ -5,8 +5,10 @@ package exam2;
 
 import org.junit.jupiter.api.Test;
 
-class AppTest {
-  @Test void appHasAGreeting() {
-    // TODO: add unit tests
+class FileSystemTest {
+  @Test void loadFromFile() {
+    FileSystem sys = new FileSystem();
+    sys.loadFolderItemFromFile("../folderItem.dat");
+    sys.displayFolderItemInfo();
   }
 }
