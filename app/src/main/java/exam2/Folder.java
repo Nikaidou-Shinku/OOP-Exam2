@@ -38,6 +38,7 @@ public class Folder extends FolderItem implements Iterable<FolderItem> {
     return folderItemList.stream()
       .map(f -> {
         if (f instanceof Folder) {
+          // TODO: check this with nested folders
           return ((Folder)f).getNumberOfFolderItems() + 1; // +1 for the folder itself
         } else {
           return 1;
