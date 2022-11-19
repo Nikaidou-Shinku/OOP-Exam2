@@ -22,12 +22,11 @@ public class File extends FolderItem {
 
   public String toString() {
     return String.format(
-      "%s %s %s %s %s",
-      this.getName(),
+      "%s %s %s %s",
       this.getDate(),
       this.getSize(),
       this.getOwner(),
-      extension
+      this.getName() + "." + extension
     );
   }
 }

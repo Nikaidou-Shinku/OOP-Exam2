@@ -49,12 +49,12 @@ public class Folder extends FolderItem implements Iterable<FolderItem> {
 
   public String toString() {
     return String.format(
-      "%s %s %s %s %s",
-      this.getName(),
+      "%s %s %s %s (%s)",
       this.getDate(),
       this.getSize(),
       this.getOwner(),
-      getNumberOfFolderItems()
+      this.getName() + "/",
+      this.getNumberOfFolderItems()
     );
   }
 }
