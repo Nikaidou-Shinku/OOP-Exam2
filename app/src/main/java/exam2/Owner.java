@@ -16,4 +16,8 @@ public class Owner {
   public String getName() {
     return name;
   }
+
+  public String toString() {
+    return "<" + id + ", " + name + ">";
+  }
 }
